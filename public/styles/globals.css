@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #130f0b;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-ice-cream-man);
+
+  color: #fafafad1;
+}
+
+.header-btn {
+  height: 50px;
+  width: 200px;
+  border: 1px solid #e1c27582;
+  background: #130f0b;
+  display: flex;
+  align-items: center;
+}
+
+.header-btn:hover {
+  border: 1px solid #e1c275;
+  transition: all 0.3s ease-in-out;
+  background-color: #e1c275;
+  color: #130f0b;
+  transform: scale(1.03);
+}
+
+.wave-section {
+  height: 140px;
+  background: #000;
+  clip-path: polygon(
+    /* ===== TOP WAVE (cao hơn, ít nhịp) ===== */ 0% 18%,
+    12% 30%,
+    24% 20%,
+    36% 13%,
+    48% 15%,
+    60% 25%,
+    72% 15%,
+    84% 13%,
+    100% 15%,
+
+    /* ===== BOTTOM WAVE (cao hơn, ít nhịp) ===== */ 100% 82%,
+    88% 86%,
+    76% 84%,
+    69% 80%,
+    52% 85%,
+    40% 90%,
+    28% 86%,
+    16% 88%,
+    0% 89%
+  );
+}
+
+.footer {
+  clip-path: polygon(
+    12% 30%,
+    24% 20%,
+    36% 13%,
+    48% 15%,
+    60% 25%,
+    72% 15%,
+    84% 13%,
+    100% 15%
+  );
+}
