@@ -6,7 +6,7 @@ export function About({ className }: { className?: string }) {
   const t = useTranslations("home");
 
   return (
-    <div className={`px-6 md:px-16 ${className}`}>
+    <div className={`px-4 md:px-16 ${className}`}>
       <div
         className={cn(
           "text-3xl text-center text-primary font-semibold",

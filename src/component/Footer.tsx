@@ -7,9 +7,9 @@ export function Footer({ className }: { className?: string }) {
 
   return (
     <div className={cn("h-[100px] mt-16", cinzel.className)}>
-      <div className="wave-line-top bg-neutral-50 h-[40px]" />
+      <div className="wave-line-top bg-neutral-50 h-[40px] -mb-px" />
       <footer
-        className={`text-xs  items-center flex-col bg-neutral-50 py-10 px-10 text-neutral-950 flex justify-center ${className}`}
+        className={`text-xs items-center flex-col bg-neutral-50 py-10 px-10 text-neutral-950 flex justify-center ${className}`}
       >
         <div className={cn("text-lg font-bold text-primary", cinzel.className)}>
           {t("title")}
