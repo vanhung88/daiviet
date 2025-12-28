@@ -1,6 +1,5 @@
 import { SteamIcon } from "@/public/SteamLogo";
 import { About } from "@/src/component/About";
-import { WaveBandLine } from "@/src/component/WaveBandLine";
 import { Header } from "@/src/component/Header";
 import { YoutubeIcon } from "lucide-react";
 import { Footer } from "@/src/component/Footer";
@@ -37,11 +36,11 @@ export default function Home() {
         </div>
       </div>
       <div className="relative">
-        <WaveBandLine className="absolute top-[-40px] right-0 left-0" />
+        <div className="wave-line-top-bottom absolute top-[-40px] right-0 left-0 bg-black h-[140px]" />
       </div>
       <About className="mt-[150px]" />
 
-      <Footer />
+      <Footer className="" />
     </main>
   );
 }

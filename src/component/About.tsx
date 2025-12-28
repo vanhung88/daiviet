@@ -2,7 +2,7 @@ import { openSans } from "@/public/styles/fonts";
 
 export function About({ className }: { className?: string }) {
   return (
-    <div className={`px-12 ${className}`}>
+    <div className={`px-6 md:px-16 ${className}`}>
       <div className="text-5xl text-center">About our game</div>
       <div className={`${openSans.className} pt-10 text-xl`}>
         <div>

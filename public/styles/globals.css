@@ -22,7 +22,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-ice-cream-man);
 
-  color: #fafafad1;
+  color: rgba(255, 255, 255, 0.848);
 }
 
 .header-btn {
@@ -42,11 +42,9 @@ body {
   transform: scale(1.03);
 }
 
-.wave-section {
-  height: 140px;
-  background: #000;
+.wave-line-top-bottom {
   clip-path: polygon(
-    /* ===== TOP WAVE (cao hơn, ít nhịp) ===== */ 0% 18%,
+    0% 18%,
     12% 30%,
     24% 20%,
     36% 13%,
@@ -56,7 +54,7 @@ body {
     84% 13%,
     100% 15%,
 
-    /* ===== BOTTOM WAVE (cao hơn, ít nhịp) ===== */ 100% 82%,
+    100% 82%,
     88% 86%,
     76% 84%,
     69% 80%,
@@ -68,15 +66,19 @@ body {
   );
 }
 
-.footer {
+.wave-line-top {
   clip-path: polygon(
+    0% 18%,
     12% 30%,
-    24% 20%,
+    24% 40%,
     36% 13%,
     48% 15%,
-    60% 25%,
+    60% 35%,
     72% 15%,
-    84% 13%,
-    100% 15%
+    84% 7%,
+    100% 15%,
+
+    100% 100%,
+    0% 100%
   );
 }
