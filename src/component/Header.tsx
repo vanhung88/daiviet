@@ -11,13 +11,14 @@ import { cn } from "../lib/utils";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
+import { headerPath } from "../lib/type";
 
 export function Header() {
   const t = useTranslations("header");
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
-
+  console.log(pathname);
   const changeLocale = (locale: "en" | "vi") => {
     router.replace(pathname, { locale });
   };
@@ -29,15 +30,30 @@ export function Header() {
       )}
     >
       <div className="flex gap-6">
-        <Link href="/" className="hover:text-[#e1c275]">
+        <Link
+          href="/"
+          className={cn("hover:text-[#e1c275]", {
+            "text-[#e1c275]": pathname === headerPath.home,
+          })}
+        >
           {t("home")}
         </Link>
 
-        <Link href="/contact" className="hover:text-[#e1c275]">
+        <Link
+          href="/contact"
+          className={cn("hover:text-[#e1c275]", {
+            "text-[#e1c275]": pathname === headerPath.contact,
+          })}
+        >
           {t("contact")}
         </Link>
 
-        <Link href="/news" className="hover:text-[#e1c275]">
+        <Link
+          href="/news"
+          className={cn("hover:text-[#e1c275]", {
+            "text-[#e1c275]": pathname === headerPath.news,
+          })}
+        >
           {t("news")}
         </Link>
       </div>
