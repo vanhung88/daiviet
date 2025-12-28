@@ -7,7 +7,6 @@
     "aboutOurGame": "Giới thiệu",
     "about1": "Huyền Thoại Đại Việt: Hai Vị Hoàng Đế đưa bạn vào thế giới ngầm của những linh hồn đã khuất sau khi chết. Lấy cảm hứng từ bước ngoặt trong lịch sử Việt Nam, cuộc đấu tranh giành ngôi vua Lý – Trần thế kỷ 13, trò chơi kết hợp lối kể chuyện giàu chất thơ đậm chất văn hóa Việt Nam. Là một người vô danh lạc lối tìm kiếm sự tái sinh, bạn phải trải qua những thử thách tâm linh để vượt lên trên những ràng buộc trần tục, thách thức các anh hùng dân tộc Việt và trí tuệ tâm linh của truyền thống Việt Nam. Trên hành trình đó, bạn sẽ khám phá những nhiệm vụ và di vật được rút ra từ văn hóa dân gian, gặp gỡ những con rồng huyền thoại, các vị hoàng đế và những linh hồn làm sống lại quá khứ thần thoại của Việt Nam.",
     "about2": "Cốt lõi của cuộc hành trình này là hệ thống Ngũ Hành sâu sắc, định hình mọi trận chiến, cách xây dựng nhân vật và cả những con trùm. Không có hệ thống tăng cấp truyền thống. Thay vào đó, sức mạnh đến từ việc hiểu rõ cách xây dựng nhân vật và làm chủ ngũ hành. Thiết kế chiến đấu dựa trên nguyên tố này khuyến khích lối chơi sáng tạo và kỹ năng phản công khéo léo. Kẻ thù của bạn, bao gồm cả những con trùm hùng mạnh trong truyền thuyết, đều sở hữu sức mạnh nguyên tố Mộc, Hỏa, Thổ, Kim và Thủy giống như bạn, biến mỗi cuộc chạm trán thành một bài kiểm tra chiến lược và khả năng thích ứng. Legends of Dai Viet: Two Emperors mang đậm tinh thần indie, nỗ lực mở rộng bản sắc Việt Nam trên trường quốc tế bằng cách mang đến trải nghiệm đầy thử thách, chiều sâu văn hóa và ý nghĩa sâu xa.",
-    "allRightsReserved": "Bản quyền thuộc về Legend of Dai Viet 2025",
     "comingSoon": "Trang sẽ sớm được phát hành",
     "backToHome": "Quay về trang chủ"
   },
@@ -15,5 +14,9 @@
     "home": "Trang chủ",
     "contact": "Liên Hệ",
     "news": "Tin tức"
+  },
+  "footer": {
+    "title": "Huyền Thoại Đại Việt",
+    "description": "© 2026 Huyền Thoại Đại Việt. Mọi quyền được bảo lưu."
   }
 }

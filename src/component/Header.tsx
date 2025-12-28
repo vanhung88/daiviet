@@ -1,86 +1,51 @@
 "use client";
 
-import Link from "next/link";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "../component/ui/dropdown-menu";
+import { SteamIcon } from "@/public/SteamLogo";
+import { YoutubeIcon } from "lucide-react";
 import { cn } from "../lib/utils";
-import { useRouter, usePathname } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
-import { headerPath } from "../lib/type";
+import { cinzel } from "../../public/styles/fonts";
 
 export function Header() {
-  const t = useTranslations("header");
-  const router = useRouter();
-  const pathname = usePathname();
-  const locale = useLocale();
-  console.log(pathname);
-  const changeLocale = (locale: "en" | "vi") => {
-    router.replace(pathname, { locale });
-  };
+  const t = useTranslations("home");
 
   return (
-    <header
-      className={cn(
-        "justify-start md:justify-center items-center sticky top-0 right-0 w-full z-10 left-0 h-[60px] flex px-10 bg-neutral-950/30"
-      )}
-    >
-      <div className="flex gap-6">
-        <Link
-          href="/"
-          className={cn("hover:text-[#e1c275]", {
-            "text-[#e1c275]": pathname === headerPath.home,
-          })}
-        >
-          {t("home")}
-        </Link>
+    <div className="relative">
+      <div className={cn("mt-[-60px] font-semibold", cinzel.className)}>
+        <img
+          src="/header-image.jpg"
+          alt="Background Image"
+          className="w-screen h-screen object-cover "
+        />
+        <div className="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
+          <p className="text-5xl md:text-7xl text-primary">{t("nameTitle1")}</p>
+          <p className="text-3xl md:text-4xl text-primary pt-6">
+            {t("nameTitle2")}
+          </p>
+        </div>
 
-        <Link
-          href="/contact"
-          className={cn("hover:text-[#e1c275]", {
-            "text-[#e1c275]": pathname === headerPath.contact,
-          })}
-        >
-          {t("contact")}
-        </Link>
+        <div className="text-lg flex flex-col gap-4 absolute bottom-[60px] left-1/2 transform -translate-x-1/2">
+          <button
+            className="header-btn cursor-pointer flex gap-2 justify-center"
+            onClick={() => {
+              window.open("https://www.youtube.com/watch?v=dQwgXcQ");
+            }}
+          >
+            <YoutubeIcon />
+            {t("watchTrailer")}
+          </button>
 
-        <Link
-          href="/news"
-          className={cn("hover:text-[#e1c275]", {
-            "text-[#e1c275]": pathname === headerPath.news,
-          })}
-        >
-          {t("news")}
-        </Link>
+          <button
+            className="header-btn cursor-pointer flex gap-2 justify-center"
+            onClick={() => {
+              window.open("https://store.steampowered.com/");
+            }}
+          >
+            <SteamIcon className="w-6 h-6" />
+            {t("playNow")}
+          </button>
+        </div>
       </div>
-
-      <div className="absolute right-10">
-        <DropdownMenu>
-          <DropdownMenuTrigger className="flex gap-2 items-center cursor-pointer text-md">
-            {locale === "en" ? "🏴󠁧󠁢󠁥󠁮󠁧󠁿 English" : " 🇻🇳 Vietnamese"}
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className=" border-neutral-600/60 border">
-            <DropdownMenuItem
-              className="cursor-pointer"
-              onClick={() => {
-                changeLocale("en");
-              }}
-            >
-              🏴󠁧󠁢󠁥󠁮󠁧󠁿 English
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              className="cursor-pointer"
-              onClick={() => changeLocale("vi")}
-            >
-              🇻🇳 Vietnamese
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </div>
-    </header>
+    </div>
   );
 }

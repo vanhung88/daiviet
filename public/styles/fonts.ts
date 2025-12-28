@@ -1,4 +1,4 @@
-import { Open_Sans } from "next/font/google";
+import { Open_Sans, Cinzel } from "next/font/google";
 import localFont from "next/font/local";
 
 export const iceCreamMan = localFont({
@@ -14,5 +14,9 @@ export const iceCreamMan = localFont({
 });
 
 export const openSans = Open_Sans({
+  subsets: ["latin"],
+});
+
+export const cinzel = Cinzel({
   subsets: ["latin"],
 });

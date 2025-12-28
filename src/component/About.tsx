@@ -1,4 +1,4 @@
-import { iceCreamMan, openSans } from "@/public/styles/fonts";
+import { cinzel } from "@/public/styles/fonts";
 import { cn } from "../lib/utils";
 import { useTranslations } from "next-intl";
 
@@ -7,7 +7,12 @@ export function About({ className }: { className?: string }) {
 
   return (
     <div className={`px-6 md:px-16 ${className}`}>
-      <div className={cn("text-5xl text-center", iceCreamMan.className)}>
+      <div
+        className={cn(
+          "text-3xl text-center text-primary font-semibold",
+          cinzel.className
+        )}
+      >
         {t("aboutOurGame")}
       </div>
       <div className="pt-10 text-lg">

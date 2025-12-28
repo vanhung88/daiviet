@@ -15,5 +15,9 @@
     "home": "Home",
     "contact": "Contact",
     "news": "News"
+  },
+  "footer": {
+    "title": "Legend of Dai Viet",
+    "description": "© 2026 Legend of Đại Việt. All rights reserved."
   }
 }

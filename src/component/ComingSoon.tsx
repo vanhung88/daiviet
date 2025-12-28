@@ -10,8 +10,8 @@ export function ComingSoon() {
   const router = useRouter();
 
   return (
-    <main className="bg-neutral-50 h-screen text-neutral-950 flex justify-center items-center flex-col gap-4">
-      <div className="text-4xl font-bold text-neutral-950 mb-6">
+    <main className="bg-[#130f0b] h-screen text-white flex justify-center items-center flex-col gap-4">
+      <div className="text-2xl md:text-4xl font-bold mb-6 text-center">
         {t("comingSoon")}
       </div>
       <button

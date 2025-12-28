@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Header } from "@/src/component/Header";
+import { SiteMenu } from "@/src/component/SiteMenu";
 
 type Props = {
   children: React.ReactNode;
@@ -26,12 +26,8 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang="en">
       <body className={`antialiased ${openSans.className}`}>
         <NextIntlClientProvider>
-          {
-            <>
-              <Header />
-              {children}
-            </>
-          }
+          <SiteMenu />
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
