@@ -1,4 +1,4 @@
-import { cinzel } from "@/public/styles/fonts";
+import { cormorantSC } from "@/public/styles/fonts";
 import { cn } from "../lib/utils";
 import { useTranslations } from "next-intl";
 
@@ -10,7 +10,7 @@ export function About({ className }: { className?: string }) {
       <div
         className={cn(
           "text-3xl text-center text-primary font-semibold",
-          cinzel.className
+          cormorantSC.className
         )}
       >
         {t("aboutOurGame")}

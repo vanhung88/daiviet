@@ -1,9 +1,5 @@
-import { SteamIcon } from "@/public/SteamLogo";
 import { About } from "@/src/component/About";
-import { YoutubeIcon } from "lucide-react";
 import { Footer } from "@/src/component/Footer";
-import { cn } from "@/src/lib/utils";
-import { cinzel, iceCreamMan } from "@/public/styles/fonts";
 import { useTranslations } from "next-intl";
 import { Header } from "@/src/component/Header";
 

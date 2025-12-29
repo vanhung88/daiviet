@@ -13,6 +13,7 @@ import { useLocale } from "next-intl";
 import { headerPath } from "../lib/type";
 import { Link } from "@/i18n/navigation";
 import { useIsMobile } from "../lib/useMobile";
+import { cormorantSC } from "../../public/styles/fonts";
 
 export function SiteMenu() {
   const t = useTranslations("header");
@@ -31,7 +32,9 @@ export function SiteMenu() {
         "justify-start md:justify-center items-center sticky top-0 right-0 w-full z-10 left-0 h-[60px] flex px-4 bg-neutral-950/30"
       )}
     >
-      <div className="flex gap-4">
+      <div
+        className={cn("flex gap-4 font-medium text-xl", cormorantSC.className)}
+      >
         <Link
           href={`/`}
           className={cn("hover:text-primary", {
@@ -49,15 +52,6 @@ export function SiteMenu() {
         >
           {t("contact")}
         </Link>
-
-        <Link
-          href={`/news`}
-          className={cn("hover:text-primary", {
-            "text-primary": pathname === headerPath.news,
-          })}
-        >
-          {t("news")}
-        </Link>
       </div>
 
       <div className="absolute right-4">
@@ -65,11 +59,11 @@ export function SiteMenu() {
           <DropdownMenuTrigger className="flex gap-2 items-center cursor-pointer text-md justify-center">
             {locale === "en"
               ? isMobile
-                ? "🏴󠁧󠁢󠁥󠁮󠁧󠁿 EN"
-                : "🏴󠁧󠁢󠁥󠁮󠁧󠁿 English"
+                ? "🇬🇧 EN"
+                : "🇬🇧 English"
               : isMobile
               ? "🇻🇳 VN"
-              : " 🇻🇳 Vietnamese"}
+              : "🇻🇳 Vietnamese"}
           </DropdownMenuTrigger>
           <DropdownMenuContent className=" bg-neutral-950/60 border-none">
             <DropdownMenuItem
@@ -78,7 +72,7 @@ export function SiteMenu() {
                 changeLocale("en");
               }}
             >
-              🏴󠁧󠁢󠁥󠁮󠁧󠁿 English
+              🇬🇧 English
             </DropdownMenuItem>
             <DropdownMenuItem
               className="cursor-pointer"

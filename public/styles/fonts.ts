@@ -1,4 +1,4 @@
-import { Open_Sans, Cinzel } from "next/font/google";
+import { Open_Sans, Cormorant_SC } from "next/font/google";
 import localFont from "next/font/local";
 
 export const iceCreamMan = localFont({
@@ -17,6 +17,7 @@ export const openSans = Open_Sans({
   subsets: ["latin"],
 });
 
-export const cinzel = Cinzel({
+export const cormorantSC = Cormorant_SC({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
