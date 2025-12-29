@@ -16,7 +16,7 @@ export function Header() {
           className="w-screen h-screen object-cover "
         />
         <div className="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
-          <p className="text-5xl md:text-8xl text-primary">{t("nameTitle1")}</p>
+          <p className="text-5xl md:text-7xl text-primary">{t("nameTitle1")}</p>
           <p className="text-3xl md:text-5xl text-primary pt-6">
             {t("nameTitle2")}
           </p>
