@@ -33,7 +33,7 @@ export function SiteMenu() {
       )}
     >
       <div
-        className={cn("flex gap-4 font-medium text-xl", cormorantSC.className)}
+        className={cn("flex gap-4 font-bold text-xl", cormorantSC.className)}
       >
         <Link
           href={`/`}
