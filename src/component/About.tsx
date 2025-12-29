@@ -9,7 +9,7 @@ export function About({ className }: { className?: string }) {
     <div className={`px-4 md:px-16 ${className}`}>
       <div
         className={cn(
-          "text-3xl text-center text-primary font-semibold",
+          "text-4xl text-center text-primary font-semibold",
           cormorantSC.className
         )}
       >

@@ -22,8 +22,8 @@ export function Header() {
           </p>
         </div>
 
-        <div className="text-2xl flex flex-col gap-4 absolute bottom-[60px] left-1/2 transform -translate-x-1/2">
-          <button className="header-btn cursor-pointer flex gap-2 justify-center">
+        <div className="absolute bottom-[60px] left-1/2 transform -translate-x-1/2">
+          <button className="header-btn text-xl font-bold flex justify-center">
             {t("comingSoon")}
           </button>
         </div>
